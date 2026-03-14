@@ -1,0 +1,79 @@
+<section id="skills" class="section-container" aria-label="Technical Skills">
+  <h2 class="section-title" data-aos="fade-up">Skills</h2>
+
+  <!-- Programming Languages -->
+  <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+    <h3 class="text-2xl font-bold text-lightest-slate mb-8 flex items-center gap-3">
+      <span class="w-1.5 h-8 bg-gradient-to-b from-green-400 to-emerald-500 rounded-full"></span>
+      Programming Languages
+    </h3>
+    <div class="flex flex-wrap gap-3" role="list">
+      @for (language of languages; track language.name) {
+      <div
+        class="skill-tag group relative px-4 py-2.5 rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-slate-400 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-slate-400/10"
+        role="listitem" [attr.aria-label]="language.name">
+        <span class="font-medium text-lightest-slate text-sm group-hover:text-white transition-colors">
+          {{ language.name }}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+
+  <!-- Web Development -->
+  <div class="mb-16" data-aos="fade-up" data-aos-delay="150">
+    <h3 class="text-2xl font-bold text-lightest-slate mb-8 flex items-center gap-3">
+      <span class="w-1.5 h-8 bg-gradient-to-b from-blue-400 to-cyan-500 rounded-full"></span>
+      Web Development
+    </h3>
+    <div class="flex flex-wrap gap-3" role="list">
+      @for (item of webDev; track item.name) {
+      <div
+        class="skill-tag group relative px-4 py-2.5 rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-slate-400 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-slate-400/10"
+        role="listitem" [attr.aria-label]="item.name">
+        <span class="font-medium text-lightest-slate text-sm group-hover:text-white transition-colors">
+          {{ item.name }}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+
+  <!-- Tools & Platforms -->
+  <div class="mb-16" data-aos="fade-up" data-aos-delay="200">
+    <h3 class="text-2xl font-bold text-lightest-slate mb-8 flex items-center gap-3">
+      <span class="w-1.5 h-8 bg-gradient-to-b from-purple-400 to-pink-500 rounded-full"></span>
+      Tools & Platforms
+    </h3>
+    <div class="flex flex-wrap gap-3" role="list">
+      @for (tool of tools; track tool.name) {
+      <div
+        class="skill-tag group relative px-4 py-2.5 rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-slate-400 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-slate-400/10"
+        role="listitem" [attr.aria-label]="tool.name">
+        <span class="font-medium text-lightest-slate text-sm group-hover:text-white transition-colors">
+          {{ tool.name }}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+
+  <!-- Domains -->
+  <div data-aos="fade-up" data-aos-delay="250">
+    <h3 class="text-2xl font-bold text-lightest-slate mb-8 flex items-center gap-3">
+      <span class="w-1.5 h-8 bg-gradient-to-b from-orange-400 to-red-500 rounded-full"></span>
+      Domains
+    </h3>
+    <div class="flex flex-wrap gap-3" role="list">
+      @for (domain of domains; track domain.name) {
+      <div
+        class="skill-tag group relative px-4 py-2.5 rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:border-slate-400 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-slate-400/10"
+        role="listitem" [attr.aria-label]="domain.name">
+        <span class="font-medium text-lightest-slate text-sm group-hover:text-white transition-colors">
+          {{ domain.name }}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+</section>

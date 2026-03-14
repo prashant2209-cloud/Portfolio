@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /dist/
+
+
+# Sitemap location
+Sitemap: https://prashant2209.cloud/sitemap.xml
+
+# Custom rules
+Sitemap: https://prashant2209.cloud/sitemap.xml
